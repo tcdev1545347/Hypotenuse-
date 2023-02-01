@@ -4,8 +4,11 @@
 #Author: Tien Cao
 
 #Clear any previously compiled outputs
+rm *.lis
 rm *.o
 rm *.out
+
+echo " " #Blank Line
 
 echo "Assemble hypotenuse.asm"
 nasm -f elf64 -l hypotenuse.lis -o hypotenuse.o hypotenuse.asm
